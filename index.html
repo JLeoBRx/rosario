@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rosarium de Fátima</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    
+    <!-- 📿 Coluna 1: Rosário -->
+    <div class="rosary-column">
+      <div class="rosary-box">
+        <object data="Rosary_labeled.svg" width="300px" height="auto" type="image/svg+xml" id="rosaryObject"></object>
+      </div>
+    </div>
+
+    <!-- ✍️ Coluna 2: Área de oração -->
+    <div class="content-box">
+      <h1>Rosarium de Fátima</h1>
+
+      <!-- 🔽 Bloco que será ocultado ao iniciar -->
+      <div id="intro-box">
+        <div class="intro">
+          Nossa Senhora de Fátima pediu:<br>
+          <em>"Rezem o Terço todos os dias pela paz do mundo e pela conversão dos pecadores."</em><br><br>
+          Vamos atender a esse chamado?
+        </div>
+
+        <button id="start-button">Começar a Rezar</button>
+
+        <div class="note">
+          Nesta versão, você rezará escrevendo cada oração.<br>
+          Não se preocupe com erros: o que importa é o amor com que você escreve.<br>
+          Caso você não queira escrever, clique em "Avançar sem Escrever."
+        </div>
+      </div>
+
+      <!-- 🔽 Mostrado após iniciar -->
+      <div id="prayer-section">
+        <div id="model-text"></div>
+        <textarea id="prayer-input" placeholder="Escreva sua oração aqui..."></textarea>
+        <button id="confirm-button">Confirmar</button>
+        <button id="btnSkip" disabled>Avançar sem Escrever</button>
+      </div>
+    </div>
+
+    <!-- ✅ Coluna 3: Checklist -->
+    <div id="progress">
+      <div id="checklist-content">
+        <!-- Conteúdo da checklist injetado por JS -->
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
