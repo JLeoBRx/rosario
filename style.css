@@ -207,3 +207,49 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .rosary-column,
+  .content-box,
+  #progress {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .rosary-box object {
+    width: 80%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  textarea {
+    width: 95%;
+    height: 120px;
+  }
+
+  button {
+    width: 90%;
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  #model-text {
+    font-size: 1.1em;
+    padding: 0 10px;
+  }
+
+  #progress {
+    font-size: 0.95em;
+    padding: 15px;
+  }
+}
