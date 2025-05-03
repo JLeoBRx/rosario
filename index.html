@@ -30,6 +30,22 @@
           Vamos atender a esse chamado?
         </div>
 
+        <!-- 🔄 Seletor de Mistério -->
+  <!-- 🕊️ Escolha do tipo de oração -->
+  <div class="selector" style="margin: 1rem 0;">
+    <label for="mystery-select"><strong>Qual mistério deseja rezar hoje?</strong></label><br><br>
+    <select id="mystery-select" style="padding: 0.5rem; width: 100%; max-width: 300px;">
+      <option value="gozosos">Mistérios Gozosos (Segunda e Sábado)</option>
+      <option value="dolorosos">Mistérios Dolorosos (Terça e Sexta)</option>
+      <option value="gloriosos">Mistérios Gloriosos (Quarta e Domingo)</option>
+      <option value="luminosos">Mistérios Luminosos (Quinta-feira)</option>
+      <option value="completo">Rosário Completo (Todos os Mistérios)</option>
+    </select>
+    <p style="font-size: 0.9rem; color: #555; margin-top: 0.5rem;">
+      <em>Estas são sugestões tradicionais. Você pode escolher livremente qualquer mistério.</em>
+    </p>
+  </div>
+
         <button id="start-button">Começar a Rezar</button>
 
         <div class="note">
@@ -42,6 +58,12 @@
       <!-- 🔽 Mostrado após iniciar -->
       <div id="prayer-section">
         <div id="model-text"></div>
+
+        <!-- 🖼️ Imagem do Mistério (exibida quando apropriado) -->
+        <div id="mystery-image" style="display: none; margin-top: 1rem; text-align: center;">
+          <img src="public/anunciacao.jpeg" alt="Mistério 1" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+        </div>
+
         <textarea id="prayer-input" placeholder="Escreva sua oração aqui..."></textarea>
         <button id="confirm-button">Confirmar</button>
         <button id="btnSkip" disabled>Avançar sem Escrever</button>

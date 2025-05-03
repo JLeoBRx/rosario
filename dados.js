@@ -1,6 +1,7 @@
 // dados.js
 
 // === TEXTOS DE ORAÇÃO ===
+
 const sinal = [
     "Vamos começar com o sinal da cruz. Em nome do Pai, do Filho e do Espírito Santo. Amém."
   ];
@@ -35,21 +36,7 @@ const sinal = [
     "Amém."
   ];
   
-  const painossodepoisdocredo = [
-    [
-      "Pai Nosso que estais no céu,",
-      "santificado seja o Vosso nome,",
-      "venha a nós o Vosso reino,",
-      "seja feita a Vossa vontade, assim na terra como no céu.",
-      "O pão nosso de cada dia nos dai hoje,",
-      "perdoai-nos as nossas ofensas,",
-      "assim como nós perdoamos a quem nos tem ofendido,",
-      "e não nos deixeis cair em tentação,",
-      "mas livrai-nos do mal. Amém."
-    ]
-  ];
-  
-  const avemariaintro1 = [
+  const avemaria = [
     "Ave Maria, cheia de graça, o Senhor é convosco.",
     "Bendita sois vós entre as mulheres,",
     "e bendito é o fruto do vosso ventre, Jesus.",
@@ -58,22 +45,25 @@ const sinal = [
     "agora e na hora de nossa morte. Amém."
   ];
   
-  const avemariaintro2 = [...avemariaintro1];
-  const avemariaintro3 = [...avemariaintro1];
-  
-  const painossodepoisdostresavesmaria = [
-    [
-      "Pai Nosso que estais no céu,",
-      "santificado seja o Vosso nome,",
-      "venha a nós o Vosso reino,",
-      "seja feita a Vossa vontade, assim na terra como no céu.",
-      "O pão nosso de cada dia nos dai hoje,",
-      "perdoai-nos as nossas ofensas,",
-      "assim como nós perdoamos a quem nos tem ofendido,",
-      "e não nos deixeis cair em tentação,",
-      "mas livrai-nos do mal. Amém."
-    ]
+  const painosso = [
+    "Pai Nosso que estais no céu,",
+    "santificado seja o Vosso nome,",
+    "venha a nós o Vosso reino,",
+    "seja feita a Vossa vontade, assim na terra como no céu.",
+    "O pão nosso de cada dia nos dai hoje,",
+    "perdoai-nos as nossas ofensas,",
+    "assim como nós perdoamos a quem nos tem ofendido,",
+    "e não nos deixeis cair em tentação,",
+    "mas livrai-nos do mal. Amém."
   ];
+  
+  const ohmeujesus = [
+    "Ó meu Jesus, perdoai-nos e livrai-nos do fogo do inferno,",
+    "levai as almas todas para o céu,",
+    "e socorrei principalmente as que mais precisarem da Vossa misericórdia.",
+    "Amém."
+  ];
+  
   
   const salveRainha = [
     "Salve, Rainha, Mãe de Misericórdia,",
@@ -91,10 +81,97 @@ const sinal = [
     "Amém."
   ];
   
+  // === MISTÉRIO GOZOSOS ===
+  const primeiromisteriogozoso = [
+    "A Anunciação do Anjo e a Encarnação do Verbo no seio puríssimo de Maria"
+  ];
+  
+  const segundomisteriogozoso = [
+    "A visitação de Maria Santíssima a sua prima Santa Isabel"
+  ];
+  
+  const terceiromisteriogozoso = [
+    "O nascimento de Jesus na gruta de Belém"
+  ];
+  
+  const quartomisterigozoso = [
+    "A apresentação do Menino Jesus no Templo e a purificação de Maria"
+  ];
+  
+  const quintomisteriogozoso = [
+    "O encontro do Menino Jesus no Templo entre os doutores"
+  ];
+
+  // === MISTÉRIOS DOLOROSOS ===
+const primeiromisteriodoloroso = [
+  "A agonia de Jesus no Horto das Oliveiras"
+];
+
+const segundomisteriodoloroso = [
+  "A flagelação de Jesus atado à coluna"
+];
+
+const terceiromisteriodoloroso = [
+  "A coroação de espinhos em Jesus"
+];
+
+const quartomisteriodoloroso = [
+  "Jesus carregando a cruz para o Calvário"
+];
+
+const quintomisteriodoloroso = [
+  "A crucifixão e morte de Jesus"
+];
+
+// MISTERIO GLORIOSO
+
+const primeiromisterioglorioso = [
+  "A Ressurreição de Nosso Senhor Jesus Cristo"
+];
+
+const segundomisterioglorioso = [
+  "A Ascensão de Jesus ao Céu"
+];
+
+const terceiromisterioglorioso = [
+  "A descida do Espírito Santo sobre os Apóstolos"
+];
+
+const quartomisterioglorioso = [
+  "A Assunção de Nossa Senhora ao Céu"
+];
+
+const quintomisterioglorioso = [
+  "A coroação de Maria Santíssima como Rainha do Céu e da Terra"
+];
+
+// MISTERIO LUMINOSO
+
+const primeiromisterioluminoso = [
+  "O Batismo de Jesus no Rio Jordão"
+];
+
+const segundomisterioluminoso = [
+  "A autorrevelação de Jesus nas Bodas de Caná"
+];
+
+const terceiromisterioluminoso = [
+  "O anúncio do Reino de Deus com o convite à conversão"
+];
+
+const quartomisterioluminoso = [
+  "A Transfiguração de Jesus no Monte Tabor"
+];
+
+const quintomisterioluminoso = [
+  "A instituição da Eucaristia na Última Ceia"
+];
+
+
+  
+  
+  // === Introdução completa ===
   const introduction = [...sinal, ...oferecimento, ...credo];
-  const sinalLength = sinal.length;
-  const oferecimentoLength = oferecimento.length;
-  const credoLength = credo.length;
   
   // === IDS DAS CONTAS DO ROSÁRIO ===
   const beadIds = [
@@ -115,15 +192,30 @@ const sinal = [
     oferecimento,
     credo,
     introduction,
-    sinalLength,
-    oferecimentoLength,
-    credoLength,
     beadIds,
-    avemariaintro1,
-    avemariaintro2,
-    avemariaintro3,
-    painossodepoisdocredo,
-    painossodepoisdostresavesmaria,
-    salveRainha
+    avemaria,
+    painosso,
+    ohmeujesus,
+    salveRainha,
+    primeiromisteriogozoso,
+    segundomisteriogozoso,
+    terceiromisteriogozoso,
+    quartomisterigozoso,
+    quintomisteriogozoso,
+    primeiromisteriodoloroso,
+    segundomisteriodoloroso,
+    terceiromisteriodoloroso,
+    quartomisteriodoloroso,
+    quintomisteriodoloroso,
+    primeiromisterioglorioso,
+    segundomisterioglorioso,
+    terceiromisterioglorioso,
+    quartomisterioglorioso,
+    quintomisterioglorioso,
+    primeiromisterioluminoso,
+    segundomisterioluminoso,
+    terceiromisterioluminoso,
+    quartomisterioluminoso,
+    quintomisterioluminoso
   };
   
